@@ -278,7 +278,7 @@ def plot_line_and_df(
             {line_labels[i]: to_numpy(y[i]) for i in range(y.shape[0])}, index=x
         ).sort_values(sort_col, ascending=ascending)
 
-    nutils.show_df(df.head(20))
+    show_df(df.head(20))
     if return_df:
         return df
 
